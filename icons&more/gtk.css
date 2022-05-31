@@ -1,0 +1,239 @@
+/* 
+    Title   : gtk.css dark mode
+    Author  : lsteam(linuxscoop team)
+    Youtube : https://youtube.com/c/linuxscoop
+    Website : https://linuxscoop.com
+*/
+#pulseaudio-button image { -gtk-icon-transform: scale(0.60); }
+#xfce4-power-manager-plugin image {-gtk-icon-transform: scale(0.60);}
+#xfce4-notification-plugin image {-gtk-icon-transform: scale(0.60);}
+
+.xfce4-panel.panel {
+  background-color:#32343D; /*color xfce panel*/
+  font-weight: normal;
+  text-shadow: none;
+  -gtk-icon-shadow: none; }
+
+.xfce4-panel.panel menu {
+  font-weight: normal; }
+
+ .xfce4-panel.panel button.flat, .xfce4-panel.panel button.sidebar-button {
+  color: #e6ebef; /*text color xfce panel*/
+  border-radius: 0;
+  border: none;
+  background-color: rgba(50, 52, 61, 0.95) ; } /*button color xfce panel*/
+.xfce4-panel.panel button.flat:hover, .xfce4-panel.panel button.sidebar-button:hover {
+    border: none;
+    background-color: #494c59; } /*button color xfce panel when hover*/
+.xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.sidebar-button:active,.xfce4-panel.panel button.flat:checked, .xfce4-panel.panel button.sidebar-button:checked {
+    /*color: #EFEFEF;*/
+    border: none;
+   /* background-color: #5294e2;*/ }
+.xfce4-panel.panel button.flat:active label, .xfce4-panel.panel button.sidebar-button:active label, .xfce4-panel.panel button.flat:active image, .xfce4-panel.panel button.sidebar-button:active image, .xfce4-panel.panel button.flat:checked label, .xfce4-panel.panel button.sidebar-button:checked label, .xfce4-panel.panel button.flat:checked image, .xfce4-panel.panel button.sidebar-button:checked image
+      /*color: #181818;*/ 
+/* Corrección de color para el menu global */
+
+.-vala-panel-appmenu-private {
+  background-color: transparent;
+  background-image: none;
+  color: #ffffff;
+  box-shadow: inset 0 0px;
+}
+
+.-vala-panel-appmenu-core scrolledwindow,
+.-vala-panel-appmenu-private > menuitem,
+.-vala-panel-appmenu-private > menuitem:first-child > label {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+menubar.-vala-panel-appmenu-bold > menuitem > label {
+color: #EFEFEF;
+}
+menubar.-vala-panel-appmenu-bold > menuitem:first-child > label {
+ font-weight: bolder;
+color: #EFEFEF;
+}
+
+.-vala-panel-appmenu-private > separator {
+  background-color: transparent;
+  background-image: none;
+opacity: 0;
+}
+
+/*
+Whisker Menu
+*/
+
+#whiskermenu-window * {
+  border: 0px rgba(50, 52, 61, 0.95) solid; /*All border*/
+  outline: none;
+  overflow: auto;
+}
+#whiskermenu-window {
+  background-color: rgba(50, 52, 61, 0.8) ; /*All window*/
+  color: #e6ebef; /*Text color ex:username*/
+border-radius: 10px 10px 0px 0px;
+}
+
+#whiskermenu-window scrollbar {
+background: transparent;
+}
+#whiskermenu-window entry {
+  background-color: rgba(0, 0, 0, 0.25); /*Searchbox Color*/
+  color: #e6ebef;/*Searchtext Color*/
+}
+
+#whiskermenu-window button {
+    background-color: rgba(50, 52, 61, 0.0); /*Color of Button category*/
+    color: #e6ebef; /*Color of Text button category*/
+    margin:1px;
+    margin-right: 2px;
+    border-radius: 5px;
+    background-image: none;
+}
+
+#whiskermenu-window treeview {
+  background-color: rgba(50, 52, 61, 0.1); /*Box Color of application when click/Hover on category */
+  color: #e6ebef; /*Text Color of application when click/Hover on category */
+  background-image: none;
+  outline-color: rgba(0, 0, 0, 0);
+}
+
+#whiskermenu-window .frame:first-child {
+    background: rgba(50, 52, 61, 0.1); /*First Color Box of favorite/All applications*/
+    border-radius: 8px;
+    }
+
+#whiskermenu-window button:focus,
+#whiskermenu-window button:hover,
+#whiskermenu-window button:active,
+#whiskermenu-window button:selected,
+#whiskermenu-window treeview:selected,
+#whiskermenu-window treeview:hover,
+#whiskermenu-window treeview:active,
+#whiskermenu-window treeview:focus
+{
+  background-color: #5294e2; /*Button Color click/Hover  */
+  color: #ffffff; /*Text Button Color click/Hover  */
+  transition: 200ms;
+  
+}
+#whiskermenu-window button:active {
+background: #2679db; /*Button Color click-active  */
+
+}
+#whiskermenu-window treeview:focus {
+background: transparent;
+}
+#whiskermenu-window iconview{
+background: transparent;
+border-radius: 8px;
+}
+#whiskermenu-window iconview:hover{
+background: rgba(50, 52, 61, 0.25);
+border: 1px rgba(255, 255, 255, 0.25) solid;
+}
+
+#whiskermenu-window iconview{
+background: transparent;
+border-radius: 10px;
+}
+
+
+#whiskermenu-window iconview {
+color: #ffffff; /*text color when icon view mode*/
+}
+
+
+
+/* THUNAR FIXES */
+
+/*
+.thunar toolbar {
+background: #333;
+padding: 4px;
+
+}
+.thunar toolbar button {
+background: #262626;
+border: 1px rgba(255,255,255,0.1) solid;
+margin: 2px;
+box-shadow: 2px 2px 3px transparent;
+
+}
+
+.thunar toolbar button:hover {
+background: #444;
+border: 1px rgba(255,255,255,0.4) solid;
+}
+
+
+.thunar toolbar button image {
+color: #EFEFEF;
+}
+.thunar toolbar button.toggle {
+color: #CCC;
+
+}
+.thunar toolbar button.toggle image:insensitive {
+color: #888;
+}
+.thunar toolbar button:checked {
+color: #FFF;
+background: #181818;
+}
+
+.thunar toolbar .path-bar {
+padding: 10px;
+outline-width: 0;
+}
+
+.thunar toolbar .path-bar-button {
+color: #FFF;
+margin: 0;
+outline-width: 0;
+border: 1px rgba(255,255,255,0) solid;
+}
+
+.thunar treeview.view {
+background: #EFEFEF;
+}
+.thunar treeview.view {
+color: #181818;
+}
+.thunar treeview:backdrop  {
+opacity: 0.5;
+}
+
+window.thunar {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+  
+treeview {
+    background: none;
+}
+
+
+.sidebar {
+    background-color: rgba(200, 200, 200, 0.25);
+}
+*/
+#docklike-plugin button {
+  min-height: 32px;
+  min-width: 32px;
+}
+
+/*Dock Like Plugin*/
+
+/* Brightly colored buttons */
+#docklike-plugin .open_group { background-color: #494c59; }
+#docklike-plugin .active_group { background-color: #494c59; }
+#docklike-plugin .hover_group { background-color: #494c59; }
+
+/* number of open windows label */
+#docklike-plugin .window_count { color: #2679db; }
+#docklike-plugin .open_group .window_count { color: #494c59; }
+#docklike-plugin .active_group .window_count { color : #494c59; }
