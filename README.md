@@ -13,3 +13,8 @@
 ### Nordic Themes:
 
 https://github.com/EliverLara/Nordic
+
+
+### Folder Icon:
+
+https://github.com/vinceliuice/Qogir-icon-theme
